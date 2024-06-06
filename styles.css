@@ -1,0 +1,87 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+}
+
+.calendar {
+    width: 350px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+}
+
+    .calendar-header button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+        .calendar-header button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+
+.month-year {
+    font-size: 18px;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.day-names {
+    display: flex;
+    justify-content: space-between;
+    background: #007BFF;
+    color: white;
+    padding: 5px 0;
+}
+
+    .day-names div {
+        width: calc(100% / 7);
+        text-align: center;
+        font-weight: bold;
+    }
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .days div {
+        width: calc(100% / 7);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .days div:hover {
+            background: #f0f0f0;
+        }
+
+        .days div.current-day {
+            background: #007BFF;
+            color: white;
+            border-radius: 50%;
+        }
